@@ -27,4 +27,38 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
 }
+
+.dropdown {
+  margin: 1rem 0;
+  padding: 0.2rem;
+  background-color: pink;
+}
+
+.dropdown-header {
+  width: 100%;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.dropdown-header .dropdown-control {
+  margin: 0.5rem 0;
+}
+
+.dropdown-body {
+  background-color: aqua;
+  border-bottom: 1px solid black;
+}
 /*# sourceMappingURL=style.css.map */

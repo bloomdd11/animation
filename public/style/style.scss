@@ -19,3 +19,25 @@ body {
         flex-direction: row;
     }
 }
+
+.dropdown {
+    margin: 1rem 0;
+    padding: 0.2rem;
+    background-color: pink;
+    &-header {
+        width: 100%;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid black;
+        .dropdown-control {
+            margin: 0.5rem 0;
+        }
+    }
+    &-body {
+        background-color: aqua;
+        border-bottom: 1px solid black;
+    }
+}
