@@ -12,6 +12,11 @@ body {
   background-color: antiquewhite;
 }
 
+.tab .tab-navbar a {
+  text-decoration: none;
+  background-color: white;
+}
+
 .tab .tab-navbar-body {
   background-color: aqua;
   display: -webkit-box;

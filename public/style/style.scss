@@ -8,6 +8,10 @@ body {
     background-color: pink;
     .tab-navbar {
         background-color: antiquewhite;
+        a {
+            text-decoration: none;
+            background-color: white;
+        }
     }
     .tab-navbar-body {
         background-color: aqua;
