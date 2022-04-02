@@ -1,0 +1,17 @@
+body {
+    background-color: white;
+}
+
+.tab {
+    padding: 0.5rem;
+    padding-bottom: 0;
+    background-color: pink;
+    .tab-navbar {
+        background-color: antiquewhite;
+    }
+    .tab-navbar-body {
+        background-color: aqua;
+        display: flex;
+        flex-direction: row;
+    }
+}
