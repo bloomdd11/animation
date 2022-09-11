@@ -20,31 +20,31 @@ let displayLinkBodySwitch = false;
 
 // for tabbar
 ui.navlinkItems.forEach(e => {
-    e.addEventListener('click', () => {
-        let dataAttribute = e.getAttribute('data-target');
-        if (!displayLinkBodySwitch) {
-            tabBar.displayLinkBody('none', 'all');
-            tabBar.displayLinkBody('block', dataAttribute);
+  e.addEventListener('click', () => {
+    let dataAttribute = e.getAttribute('data-target');
+    if (!displayLinkBodySwitch) {
+      tabBar.displayLinkBody('none', 'all');
+      tabBar.displayLinkBody('block', dataAttribute);
 
-            tabBar.changeLinkColor('all');
-            tabBar.changeLinkColor(dataAttribute);
-        }
-    })
+      tabBar.changeLinkColor('all');
+      tabBar.changeLinkColor(dataAttribute);
+    }
+  })
 })
 
 
 // for dropdown
 ui.dropdownControl.forEach(e => {
-    e.addEventListener('click', () => {
-        let dataAttribute = e.getAttribute('data-target');
-        if (!dropdown.dropDownSwitchArray[dataAttribute]) {
-            dropdown.displayDropDownBody('block', dataAttribute);
-            dropdown.dropDownSwitchArrayUpdate(dataAttribute);
-            dropdown.changeText(dataAttribute);
-        } else {
-            dropdown.displayDropDownBody('none', dataAttribute);
-            dropdown.dropDownSwitchArrayUpdate(dataAttribute);
-            dropdown.changeText(dataAttribute);
-        }
-    })
+  e.addEventListener('click', () => {
+    let dataAttribute = e.getAttribute('data-target');
+    if (!dropdown.dropDownSwitchArray[dataAttribute]) {
+      dropdown.displayDropDownBody('block', dataAttribute);
+      dropdown.dropDownSwitchArrayUpdate(dataAttribute);
+      dropdown.changeText(dataAttribute);
+    } else {
+      dropdown.displayDropDownBody('none', dataAttribute);
+      dropdown.dropDownSwitchArrayUpdate(dataAttribute);
+      dropdown.changeText(dataAttribute);
+    }
+  })
 })
